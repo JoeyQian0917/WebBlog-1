@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+app/components/header.js
+app/components/header.less
+app/containers/
+routes.js
+static/icoHtml/
+static/images/

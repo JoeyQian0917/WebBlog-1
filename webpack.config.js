@@ -32,7 +32,7 @@ module.exports ={
 	module:{
 		loaders :[
 			{
-				test:/\.js$/,
+				test:/\.js?$/,
 				exclude: /node_modules/,
 				loader:'babel-loader',
 				query: {
@@ -40,11 +40,14 @@ module.exports ={
         		}
 		 	},{
 			 	test:/\.css$/,
-			 	loader:'styless!css'
+			 	loader:'style-loader!css-loader'
 		 	},{
 			 	test:/\.less/,
 			 	loader:'style-loader!css-loader!less-loader'
-		 	}
+		 	},{
+                test: /\.json$/,
+                loader: 'json-loader'
+            }
 		]
 	}
 }

@@ -7,7 +7,8 @@ new WebpackDevServer (webpack(config),{
 	hot:true,
 	historyApiFallback:true,
 	quiet:false,
-	noInfo:false,
+	noInfo:false,//终端中输出结果为彩色
+    inline: true,//实时刷新
 	stats:{
 		assets:false,
 		colors:true,
