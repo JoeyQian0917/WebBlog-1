@@ -1,19 +1,16 @@
+
 import React from 'react';
-import {render} from 'react-dom'
-import {AppContainer} from 'react-hot-loader';
-import {  BrowserRouter , Route } from 'react-router-dom'
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
 import App from './containers/App';
 
-render(
-	// <AppContainer>
-	// 	<App/>
-	// </AppContainer>,
+const store = configureStore();
 
-    //使用路由来替代App组件
-    <BrowserRouter >
-        <Route path="/" component={App}/>
-    </BrowserRouter>,
-	document.getElementById('root')
+ReactDOM.render(
+	<Provider store={store}>
+		<App />
+	</Provider>, document.getElementById('root')
 );
 if(module.hot){
 	module.hot.accept('./containers/App',()=>{
