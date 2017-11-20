@@ -10,9 +10,9 @@ export default class HomeBanner extends Component {
             <div className="home-banner">
                 <div className="home-banner-me">
                     <div className="home-banner-photo">
-                        <img src="../../static/images/header.jpg" alt="头像" />
+                        <img src="../../../static/touxiang/WechatIMG1442.jpeg" alt="头像" />
                     </div>
-                    <video src="../../../static/WeChatSight253.mp4" controls="controls" ></video>
+                    {/*<video src="../../../static/WeChatSight253.mp4" controls="controls" ></video>*/}
                     <div className="home-banner-desc">
                         <h1>马海</h1>
                         <p>一个正在努力的程序猿.......</p>
