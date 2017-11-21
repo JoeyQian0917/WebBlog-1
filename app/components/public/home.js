@@ -12,21 +12,15 @@ export default class Home extends Component {
  	constructor() {
         super();
         this.state = {
-            a:""
+            
         };
     }
-	ok(e){
-		this.setState({
-			a:e
-		})
-	}
     render() {
     	this.refs;
         return (
             <div>
                 <HomeBanner />
-                <HomeCardArea ok ={this.ok.bind(this)}/>
-                <h3>{this.state.a}</h3>
+                <HomeCardArea/>
             </div>
 
         );

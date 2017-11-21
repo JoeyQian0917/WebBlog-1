@@ -16,13 +16,11 @@ export default class HomeCardArea extends Component {
     componentDidMount() {
         
     }
-    handleClick(e) {
-        this.props.ok(e.target.value)
-    }
+    
     render() {
         return (
             <div className="home-card-area">
-               <input type="text" ref="myTextInput" onChange={this.handleClick.bind(this)}/>
+              
             </div>
         );
     }
